@@ -1,8 +1,7 @@
 
 
-********************
 # Novo&Stitch Software
-********************
+
 
 
 
@@ -40,12 +39,13 @@ RefAligner is a tool developed by BioNano company to align contigs to optical ma
 RefAligner can be found from http://www.bnxinstall.com/RefalignerAssembler/Linux/ 
 
 6. blastn
+
 blastn is called by Novo&Stitch to get the sequence alignments between overlapped contigs, so it has to been installed. 
 
 7. fa2cmap_multi.pl
 In Novo$Stitch, we use one perl script "fa2cmap_multi.pl" of a scaffolding tool Irys-scaffolding. 
 The users need to download this script from https://github.com/i5K-KINBRE-script-share/Irys-scaffolding/blob/e8e8f177dce2bf59421bd00c517ab7dc683e25d4/KSU_bioinfo_lab/assemble_XeonPhi/third-party/fa2cmap_multi.pl
-and then put it in our ./novo_stitch/tools directory.   
+and then put it in our ./Novo_Stitch/tools directory.   
 
 
 
@@ -56,11 +56,11 @@ and then put it in our ./novo_stitch/tools directory.
 
 In Novo$Stitch, only the part written by C/C++ language needs to be compiled. 
 Plaase follow the steps as follow:
-$cd ./novo_stitch
+$cd ./Novo_Stitch
 $g++ ./scripts/Script_mapping_contigs2contigs.cc -o ./tools/Script_mapping_contigs2contigs -fopenmp
 $g++ ./scripts/Script_mapping_contigs2stitched_contigs.cc -o ./tools/Script_mapping_contigs2stitched_contigs -fopenmp
 
-And as we said in DEPENDENCY, don't forget to download fa2cmap_multi.pl script and put it in ./novo_stitch/tools directory. 
+And as we said in DEPENDENCY, don't forget to download fa2cmap_multi.pl script and put it in ./Novo_Stitch/tools directory. 
 
 
 
@@ -78,12 +78,12 @@ Functional parameters are the ones that users may have to set by themselves. For
 Novo$Stitch offers two ways to input parameters for users as follow:
 (1) first way
 e.g. 
-$cd ./novo_stitch
+$cd ./Novo_Stitch
 $python ./scripts/main.py -x /home/stelo/BIONANO_in_progress/tools/RefAligner -i /home/weihua/cowpea/fastas_cowpea_eight.txt -o /home/weihua/cowpea/eight_stitch_loose_false_and_contained_BssSI -t BssSI -m /home/stelo/BIONANO_in_progress/vu_bsss1_102.cmap -p 32 -a 0 -b 0.2 -c 5000 -d 0.5 -e 0.8
 
 (2) second way
 e.g.
-$cd ./novo_stitch
+$cd ./Novo_Stitch
 $python ./scripts/main.py -f ~/phytophthora/parameters.txt
 Then in parameters.txt, the parameters are listed line by line as follows:
 -x /home/stelo/BIONANO_in_progress/tools/RefAligner
