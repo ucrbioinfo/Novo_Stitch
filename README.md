@@ -70,8 +70,10 @@ There are two kinds of parameters, functional parameters and performance related
 Functional parameters are the ones that users may have to set by themselves. For performance related parameters, most users may not be able to understand the meaning of them, unless they are very familiar with every step of Novo&Stitch algorithm. Therefore, we offer two sets of suggested parameters for users in "performance related parameters" section. 
 
 1. functional parameters  
+
 -f: specify the parameter file which lists all the input paramerters.
 Novo$Stitch offers two ways to input parameters for users as follow:
+
 (1) first way
 e.g. 
 $cd ./Novo_Stitch
