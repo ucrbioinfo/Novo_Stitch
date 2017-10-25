@@ -1,1 +1,2 @@
-
+1. Please put downloaded fa2cmap_multi.pl file in this directory.
+2. Please compile Script_mapping_contigs2contigs.cc and Script_mapping_contigs2stitched_contigs.cc into executable programs Script_mapping_contigs2contigs and Script_mapping_contigs2stitched_contigs and put them in this directory.
