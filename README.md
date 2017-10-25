@@ -4,25 +4,23 @@
 
 
 
-
-***********
 # DESCRIPTION
-***********
+
 
 Novo&Stitch is an assembly reconciliation tool which takes advantage of optical maps to accurately carry out assembly reconciliation. One or more optical maps are used to obtain coordinates for the contigs, which are then stitched based on their alignments. The presence of the optical map dramatically reduces the complexityof the problem and the possibility of a misjoin. Combinatorial optimization models and technologies such as graph model, dynamic programming, weighted vertex cover model on hypergraph, greedy strategy, linear programming are used for solving some subproblems like data reduction, error correction and post-processing. 
 Extensive experimental results demonstrate that Novo&Stitch can significantly improve the contiguity of de novo genome assemblies without introducing misassembles or reducing completeness.
 Until now, Novo&Stitch can only run on Unix/Linux systems.  
 
 
-**********
-# DEPENDENCY
-**********
 
-1. python
+# DEPENDENCY
+
+
+1. python   
 The majoy part of Novo&Stitch is written in Python, so Python has to be installed. 
 Python2.7(or above) is suggested.  
 
-2. perl
+2. perl   
 In Novo$Stitch, we use one perl script "fa2cmap_multi.pl" of a scaffolding tool Irys-scaffolding.
 So perl has to be installed.
 
@@ -50,9 +48,9 @@ and then put it in our ./Novo_Stitch/tools directory.
 
 
 
-************
+
 # INSTALLATION
-************
+
 
 In Novo$Stitch, only the part written by C/C++ language needs to be compiled. 
 Plaase follow the steps as follow:
@@ -65,9 +63,9 @@ And as we said in DEPENDENCY, don't forget to download fa2cmap_multi.pl script a
 
 
 
-**********
+
 # PARAMETERS
-**********
+
 
 There are two kinds of parameters, functional parameters and performance related parameters. 
 Functional parameters are the ones that users may have to set by themselves. For performance related parameters, most users may not be able to understand the meaning of them, unless they are very familiar with every step of Novo&Stitch algorithm. Therefore, we offer two sets of suggested parameters for users in "performance related parameters" section. 
