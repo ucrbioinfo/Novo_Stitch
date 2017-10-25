@@ -1,13 +1,13 @@
 
 
 ********************
-Novo&Stitch Software
+# Novo&Stitch Software
 ********************
 
 
 
 ***********
-DESCRIPTION
+# DESCRIPTION
 ***********
 
 Novo&Stitch is an assembly reconciliation tool which takes advantage of optical maps to accurately carry out assembly reconciliation. One or more optical maps are used to obtain coordinates for the contigs, which are then stitched based on their alignments. The presence of the optical map dramatically reduces the complexityof the problem and the possibility of a misjoin. Combinatorial optimization models and technologies such as graph model, dynamic programming, weighted vertex cover model on hypergraph, greedy strategy, linear programming are used for solving some subproblems like data reduction, error correction and post-processing. 
@@ -16,7 +16,7 @@ Until now, Novo&Stitch can only run on Unix/Linux systems.
 
 
 **********
-DEPENDENCY
+# DEPENDENCY
 **********
 
 1. python
@@ -42,7 +42,7 @@ RefAligner can be found from http://www.bnxinstall.com/RefalignerAssembler/Linux
 6. blastn
 blastn is called by Novo&Stitch to get the sequence alignments between overlapped contigs, so it has to been installed. 
 
-7. 
+7. fa2cmap_multi.pl
 In Novo$Stitch, we use one perl script "fa2cmap_multi.pl" of a scaffolding tool Irys-scaffolding. 
 The users need to download this script from https://github.com/i5K-KINBRE-script-share/Irys-scaffolding/blob/e8e8f177dce2bf59421bd00c517ab7dc683e25d4/KSU_bioinfo_lab/assemble_XeonPhi/third-party/fa2cmap_multi.pl
 and then put it in our ./novo_stitch/tools directory.   
@@ -51,7 +51,7 @@ and then put it in our ./novo_stitch/tools directory.
 
 
 ************
-INSTALLATION
+# INSTALLATION
 ************
 
 In Novo$Stitch, only the part written by C/C++ language needs to be compiled. 
@@ -66,7 +66,7 @@ And as we said in DEPENDENCY, don't forget to download fa2cmap_multi.pl script a
 
 
 **********
-PARAMETERS
+# PARAMETERS
 **********
 
 There are two kinds of parameters, functional parameters and performance related parameters. 
@@ -153,7 +153,7 @@ The strict set is more conservative than loose set, which means it stitches less
 
 
 ************
-OUTPUT FILES
+# OUTPUT FILES
 ************
 
 There are two kinds of output files, stitched contigs file and log files. Stitched contigs file contains the final stitched contigs, while the log files contain the information which shows the whole process of running. All of the output files are stored in output directory specified by users. There are some other intermediate files inside, which could be ignored by users.
