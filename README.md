@@ -27,7 +27,7 @@ RefAligner can be found from http://www.bnxinstall.com/RefalignerAssembler/Linux
 6. blastn
 blastn is called by Novo&Stitch to get the sequence alignments between overlapped contigs, so it has to been installed. 
 
-7. 
+7. fa2cmap_multi.pl file
 In Novo$Stitch, we use one perl script "fa2cmap_multi.pl" of a scaffolding tool Irys-scaffolding. 
 The users need to download this script from https://github.com/i5K-KINBRE-script-share/Irys-scaffolding/blob/e8e8f177dce2bf59421bd00c517ab7dc683e25d4/KSU_bioinfo_lab/assemble_XeonPhi/third-party/fa2cmap_multi.pl
 and then put it in our ./novo_stitch/tools directory.
