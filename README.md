@@ -34,7 +34,7 @@ GLPK can be found from https://www.gnu.org/software/glpk/#TOCdownloading.
 
 5. RefAligner   
 RefAligner is a tool developed by BioNano company to align contigs to optical maps. It is called by Novo&Stitch, so it has to be installed. 
-RefAligner can be found from http://www.bnxinstall.com/RefalignerAssembler/Linux/ 
+RefAligner can be downloaded from https://www.cs.ucr.edu/~stelo/refaligner/ (Bionano does not distributed it anymore)
 
 6. blastn  
 blastn is called by Novo&Stitch to get the sequence alignments between overlapped contigs, so it has to been installed. 
